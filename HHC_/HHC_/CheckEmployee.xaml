@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HHC_.CheckEmployee"
+             Title="Check An Employee">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Margin="25, 50, 25, 0"
+                   TextColor="White" 
+                   Text="Please select the employee's shift"
+                   FontSize="Medium"
+                   HeightRequest="25"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <TimePicker Margin="50, 0, 50, 0"
+                    TextColor="White"
+                    x:Name="timePicker"
+                    BackgroundColor="Black"
+                    Time="06:00"
+                    Format="t"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    PropertyChanged="OnTimePickerPropertyChanged" />    
+            <Grid Margin="50,50,50,50" IsVisible="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.8*" />
+                    <ColumnDefinition Width="0.2*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1" >
+                    <Label TextColor="White" Text="  Yes" />
+                    <Label TextColor="White" Text="   No" />
+                </StackLayout>
+                <Label TextColor="White" Grid.Row="1" Grid.Column="0" Text="Has the employee washed their hands prior to entering or used 60%+ ABHR?" />
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" Grid.Row="1" Grid.Column="1" >
+                    <CheckBox Color="White" x:Name="ch1" CheckedChanged="Ch1ch" />
+                    <CheckBox Color="White" x:Name="ch12" CheckedChanged="Ch12ch" />
+                </StackLayout>
+                <Label TextColor="White" Grid.Row="2" Grid.Column="0" Text="Does the employee exhibit any of the following symptoms:  Shortness of Breath/Dry Cough/Sore Throat/Fever ?" />
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" Grid.Row="2" Grid.Column="1" >
+                    <CheckBox Color="White" x:Name="ch2" CheckedChanged="ch2ch" />
+                    <CheckBox Color="White" x:Name="ch22" CheckedChanged="ch22ch" />
+                </StackLayout>
+                <Label TextColor="White" Grid.Row="3" Grid.Column="0" Text="Has the employee been within 6' of anyone who has tested positive for Covid-19 in the last 14 days?" />
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" Grid.Row="3" Grid.Column="1" >
+                    <CheckBox Color="White" x:Name="ch3" CheckedChanged="ch3ch" />
+                    <CheckBox Color="White" x:Name="ch32" CheckedChanged="ch32ch" />
+                </StackLayout>
+                <Label TextColor="White" Grid.Row="4" Grid.Column="0" Text="Is the employee's current temperature under 100.4 F?" />
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" Grid.Row="4" Grid.Column="1" >
+                    <CheckBox Color="White" x:Name="ch4" CheckedChanged="ch4ch" />
+                    <CheckBox Color="White" x:Name="ch42" CheckedChanged="ch42ch" />
+                </StackLayout>
+                <Label TextColor="White" Grid.Row="5" Grid.Column="0" Text="If the employee has recently been sick, do they have medical clearance to return to work? (Mark Yes if N/A)" />
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" Grid.Row="5" Grid.Column="1" >
+                    <CheckBox Color="White" x:Name="ch5" CheckedChanged="ch5ch" />
+                    <CheckBox Color="White" x:Name="ch52" CheckedChanged="ch52ch" />
+                </StackLayout>
+            </Grid>
+                <Button TextColor="White" 
+                        BackgroundColor="Black" 
+                        WidthRequest="150" 
+                        BorderWidth="5" 
+                        BorderColor="White"
+                        CornerRadius="20" 
+                        x:Name="btn" 
+                        Text="Submit" 
+                        Clicked="OnSubmitClick" 
+                        HeightRequest="75"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
