@@ -1,4 +1,4 @@
-﻿using HHC.Models;
+﻿using HHC_.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,7 +10,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace HHC
+namespace HHC_
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ViewChecked : ContentPage

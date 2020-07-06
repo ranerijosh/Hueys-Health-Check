@@ -4,11 +4,10 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HHC.App">
+             x:Class="HHC_.App">
     <Application.Resources>
 
         <Thickness x:Key="PageMargin">20</Thickness>
-        
         
         <Color x:Key="TitleBarColor">#000000</Color>
         <Color x:Key="AppBackgroundColor">Black</Color>

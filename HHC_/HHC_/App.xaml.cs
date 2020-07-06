@@ -1,9 +1,9 @@
-﻿using HHC.Models;
+﻿using HHC_.Models;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace HHC
+namespace HHC_
 {
     public partial class App : Application
     {
@@ -11,7 +11,7 @@ namespace HHC
         public App()
         {
             InitializeComponent();
-            
+
             MainPage = new NavigationPage(new MainPage());
         }
 

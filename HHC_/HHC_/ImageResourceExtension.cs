@@ -5,7 +5,7 @@ using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace HHC
+namespace HHC_
 {
     [ContentProperty(nameof(Source))]
     public class ImageResourceExtension : IMarkupExtension
