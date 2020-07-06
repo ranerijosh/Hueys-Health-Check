@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace HHC_.Models
+namespace HHC.Models
 {
     public class Employee
     {

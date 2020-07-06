@@ -1,4 +1,4 @@
-﻿using HHC_.Models;
+﻿using HHC.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
-namespace HHC_
+namespace HHC
 {
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage

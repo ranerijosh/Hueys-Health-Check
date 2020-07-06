@@ -4,8 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:local="clr-namespace:HHC_;assembly=HHC_"
-             x:Class="HHC_.MainPage"
+             xmlns:local="clr-namespace:HHC;assembly=HHC_"
+             x:Class="HHC.MainPage"
              Title="Huey's Health Check">
 
     <StackLayout Margin="50, 0, 50, 0">

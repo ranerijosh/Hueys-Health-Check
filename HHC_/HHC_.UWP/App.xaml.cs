@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace HHC_.UWP
+namespace HHC.UWP
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

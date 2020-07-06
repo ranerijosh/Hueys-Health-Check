@@ -7,7 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace HHC_.Droid
+namespace HHC.Droid
 {
     [Activity(Label = "Huey's Health Check", Icon = "@drawable/round_logo", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity

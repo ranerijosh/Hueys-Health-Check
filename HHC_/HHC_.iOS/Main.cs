@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace HHC_.iOS
+namespace HHC.iOS
 {
     public class Application
     {
