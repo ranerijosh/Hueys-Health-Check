@@ -50,5 +50,10 @@ namespace HHC_
             await DisplayAlert("No Open Shift", "Please create a new shift first.", "OK");
             await Navigation.PopModalAsync();
         }
+
+        async void OnReturnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
