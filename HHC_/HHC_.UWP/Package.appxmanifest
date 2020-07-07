@@ -8,14 +8,14 @@
 
   <Identity
     Name="24f5067d-36b5-4d96-a58e-d1b364102ef4"
-    Publisher="CN=theje"
+    Publisher="CN=Huey Magoo&apos;s"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="24f5067d-36b5-4d96-a58e-d1b364102ef4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>HHC_.UWP</DisplayName>
-    <PublisherDisplayName>theje</PublisherDisplayName>
+    <PublisherDisplayName>Huey Magoo&apos;s</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,13 +32,16 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="HHC_.UWP.App">
       <uap:VisualElements
-        DisplayName="HHC_.UWP"
+        DisplayName="Huey&apos;s Health Check"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="HHC_.UWP"
+        Description="Huey&apos;s Health Check"
         BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait"/>
+          <uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>

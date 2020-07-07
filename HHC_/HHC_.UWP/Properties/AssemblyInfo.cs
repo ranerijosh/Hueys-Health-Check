@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HHC_.UWP")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Huey's Health Check")]
+[assembly: AssemblyDescription("Covid-19 shift health check")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Huey Magoo's")]
 [assembly: AssemblyProduct("HHC_.UWP")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]

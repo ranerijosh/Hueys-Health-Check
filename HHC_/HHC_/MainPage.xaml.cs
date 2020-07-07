@@ -95,7 +95,7 @@ namespace HHC_
 
                     var date = DateTime.Parse(list[1]);
                     string todayFormatter = date.ToString("MM-dd-yyyy");
-                    string mailFileName = list[0] + "_" + todayFormatter + "_" + list[2] + ".txt";
+                    string mailFileName = store + "_" + todayFormatter + "_" + list[2] + ".txt";
                     string mailFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), mailFileName);
                     if (!File.Exists(mailFile))
                     {
@@ -109,7 +109,7 @@ namespace HHC_
                     var message = new EmailMessage
                     {
                         Subject = "Shift health summary",
-                        Body = "Shift file attached for Store #" + list[0],
+                        Body = "Shift file attached for Store #" + store,
                         To = recipients
                     };
                     message.Attachments.Add(new EmailAttachment(mailFile));
