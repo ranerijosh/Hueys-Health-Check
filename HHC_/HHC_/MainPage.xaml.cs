@@ -109,7 +109,7 @@ namespace HHC_
                     var message = new EmailMessage
                     {
                         Subject = "Shift health summary",
-                        Body = "Shift file attached for Store #" + store,
+                        Body = "Shift file attached for Store #" + list[0],
                         To = recipients
                     };
                     message.Attachments.Add(new EmailAttachment(mailFile));

@@ -8,29 +8,31 @@
              Title="Checked Employees">
 
     <ContentPage.Content>
-        <StackLayout>
-            <ListView x:Name="CheckedView" ItemsSource="{Binding Employees}" Margin="20, 20, 20, 20">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Label HorizontalOptions="CenterAndExpand" TextColor="White" Text="{Binding DisplayLine}"/>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Button 
-                Margin="50, 50, 50, 5"
-                Text="Return" 
-                BackgroundColor="Black"
-                TextColor="White"
-                BorderColor="White"
-                BorderWidth="5"
-                CornerRadius="20"
-                Clicked="OnReturnClicked"
-                WidthRequest="200"
-                HeightRequest="75"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <ListView x:Name="CheckedView" ItemsSource="{Binding Employees}" Margin="20, 20, 20, 20">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Label HorizontalOptions="CenterAndExpand" TextColor="White" Text="{Binding DisplayLine}"/>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button 
+                    Margin="50, 50, 50, 5"
+                    Text="Return" 
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    BorderColor="White"
+                    BorderWidth="5"
+                    CornerRadius="20"
+                    Clicked="OnReturnClicked"
+                    WidthRequest="200"
+                    HeightRequest="75"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -8,11 +8,12 @@
              x:Class="HHC_.MainPage"
              Title="Huey's Health Check">
 
-    <StackLayout Margin="50, 0, 50, 0">
+    <ScrollView>
+        <StackLayout Margin="50, 0, 50, 0">
 
-        <Image Margin="50, 20, 50, 0" Source="{local:ImageResource HHC_.hueyslogo.png}" WidthRequest="250" HeightRequest="250"/>
+            <Image Margin="50, 20, 50, 0" Source="{local:ImageResource HHC_.hueyslogo.png}" WidthRequest="200" HeightRequest="200"/>
         
-        <Button 
+            <Button 
                 Margin="50, 50, 50, 5"
                 Text="New Shift" 
                 BackgroundColor="Black"
@@ -26,8 +27,8 @@
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand" />
 
-        <Button Margin="50, 5, 50, 5"
-                Text="Check An Employee" 
+            <Button Margin="50, 5, 50, 5"
+                Text="Check In An Employee" 
                 BackgroundColor="Black"
                 TextColor="White"
                 BorderColor="White"
@@ -39,7 +40,7 @@
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand" />
 
-        <Button Margin="50, 5, 50, 5"
+            <Button Margin="50, 5, 50, 5"
                 Text="View Shift"  
                 BackgroundColor="Black"
                 TextColor="White"
@@ -52,7 +53,7 @@
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand" />
 
-        <Button Margin="50, 5, 50, 100"
+            <Button Margin="50, 5, 50, 100"
                 Text="Submit Shift"  
                 BackgroundColor="Black"
                 TextColor="White"
@@ -64,6 +65,6 @@
                 HeightRequest="75"
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+        </StackLayout>
+     </ScrollView>
 </ContentPage>
