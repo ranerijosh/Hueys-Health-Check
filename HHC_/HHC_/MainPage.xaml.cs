@@ -66,7 +66,7 @@ namespace HHC_
                 {
                     var recipients = new List<string>
                     {
-                        "thejewosh@gmail.com"
+                        "operations@hueymagoos.com"
                     };
 
                     List<string> list = new List<string>();

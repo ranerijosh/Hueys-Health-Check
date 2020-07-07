@@ -196,7 +196,7 @@ namespace HHC_
                         }
                         var recipients = new List<string>
                         {
-                            "thejewosh@gmail.com"
+                            "operations@hueymagoos.com"
                         };
                         var message = new EmailMessage
                         {
